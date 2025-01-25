@@ -21,11 +21,13 @@ struct exam {
 
 void vector_from_input(std::istream& ss, std::vector<int>& numbers);
 
-void vector_increment(std::vector<int>& numbers, int step = 1);
+void vector_increment(std::vector<int>& numbers);
+
+void vector_increment_by_2(std::vector<int>& numbers);
 
 void cube_vector_values(std::vector<int>& numbers);
 
-void calculate_distances_from_origin(std::vector<double>& distances, const int* x, const int x_size, const std::vector<int> y);
+void calculate_distances_from_origin(std::vector<double>& distances, const int* x, const int x_size, std::vector<int> y);
 
 double sum_input_stream(std::istream& ss);
 
@@ -57,4 +59,4 @@ double find_smallest(const std::vector<double>& numbers);
 
 double find_largest(const std::vector<double>& numbers);
 
-int smallest_difference(const std::vector<int>& numbers);
+int smallest_difference(std::vector<int> numbers);
